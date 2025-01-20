@@ -17,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
 Route::get("/doctors", [DoctorController::class, "index"]);
 Route::post("/doctors", [DoctorController::class, "store"]);
@@ -33,6 +33,7 @@ Route::get("get-specialty/{specialty} ", [SpecialtyController::class, "getSpecia
 
 
 // AUTHENTICATION
+Route::middleware('auth:sanctum')->get('/user', [AuthController::class, 'getUser']);
 Route::post("register", [AuthController::class, "register"]);
 Route::post("login", [AuthController::class, "login"]);
 Route::post("logout", [AuthController::class, "logout"])->middleware('auth:sanctum');

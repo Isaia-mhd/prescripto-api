@@ -9,5 +9,8 @@ class Specialty extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        "specialty"
+    ];
     
 }

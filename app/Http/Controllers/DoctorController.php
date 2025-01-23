@@ -21,6 +21,7 @@ class DoctorController extends Controller
         }
     }
 
+
     /**
      * Store a newly created resource in storage.
      */
@@ -48,7 +49,7 @@ class DoctorController extends Controller
             return response()->json($doctors);
 
         } catch (\Throwable $th) {
-            return response()->json(["error" => "something went wrong"]);
+            return response()->json(["error" => $th]);
         }
     }
 

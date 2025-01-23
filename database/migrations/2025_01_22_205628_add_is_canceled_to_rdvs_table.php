@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('rdvs', function (Blueprint $table) {
-            $table->boolean("isCanceled");
+            $table->boolean("isCanceled")->default(false);
         });
     }
 

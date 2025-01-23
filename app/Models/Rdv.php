@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Rdv extends Model
 {
     use HasFactory;
+
+    public $incrementing = false;
+    // Set the keyType to 'string' because the UUID is a string type
+    protected $keyType = 'string';
     protected $fillable = [
         "doctor_id",
         "user_id",

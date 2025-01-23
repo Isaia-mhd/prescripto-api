@@ -46,10 +46,36 @@ class RdvController extends Controller
         }
     }
 
-    public function cancel(Rdv $rdv){
-        $appointment = Rdv::find($rdv);
-        $appointment->update([
-            "isCanceled" => true
-        ]);
+    public function cancel(Rdv $rdv)
+    {
+        try {
+            // Vérification si l'instance est valide
+            if (!$rdv) {
+                return response()->json(["error" => "Appointment not found!"], 404);
+            }
+
+            // Mise à jour de l'état d'annulation
+            $rdv->update([
+                "isCanceled" => true
+            ]);
+
+            // Retour de la réponse en cas de succès
+            return response()->json(["message" => "Rdv Canceled successfully"], 200);
+
+        } catch (\Throwable $th) {
+            // Gestion des erreurs
+            return response()->json(["error" => $th->getMessage()], 500);
+        }
+    
     }
+    public function destroy(Rdv $rdv){
+        try {
+            $rdv->delete();
+            
+            return response()->json(["success" => "Rdv canceled"]);
+        } catch (\Throwable $th) {
+            return response()->json(["error" => $th->getMessage()]);
+        }
+    }
+
 }

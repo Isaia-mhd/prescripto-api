@@ -7,7 +7,7 @@
 @section('body')
     {{-- LOGIN FIELD --}}
     <div class="w-full">
-        <div class="w-[30%] mt-12 bg-white  rounded-2xl py-[50px] shadow-xl px-10 space-y-2">
+        <div class="w-[35%] mt-12 bg-white  rounded-2xl py-[50px] shadow-xl px-10 space-y-2">
 
             <p class="!text-2xl !text-gray-700 !font-semibold">Login</p>
 

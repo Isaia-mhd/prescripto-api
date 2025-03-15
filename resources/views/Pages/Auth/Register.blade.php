@@ -5,7 +5,7 @@
 
 @section('body')
     {{-- CREATE ACCOUNT FIELD  --}}
-    <div class="w-[30%] mt-12 mb-[100px] flex flex-col justify-start items-start shadow-xl py-[50px] px-10 space-y-2">
+    <div class="w-[35%] bg-white rounded-2xl mt-12 mb-[100px] flex flex-col justify-start items-start shadow-xl py-[50px] px-10 space-y-2">
 
         <p class="!text-2xl !text-gray-700 !font-semibold">
             Create account
@@ -53,7 +53,7 @@
                 </button>
             </div>
         </form>
-        
+
         <p class="text-gray-700 !text-sm !font-semibold">
             Already have an account?
             <a href="{{ route('login') }}" class="text-blue-600 underline cursor-pointer">

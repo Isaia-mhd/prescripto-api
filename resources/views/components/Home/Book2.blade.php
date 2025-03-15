@@ -20,7 +20,7 @@
 
             {{-- BUTTON to book --}}
             <div class="w-[250px] pt-6">
-                <a to="/login" class=" bg-white px-10 py-3 hover:cursor-pointer rounded-full !text-gray-500 !font-semibold">Create
+                <a href="{{ route("register") }}" class=" bg-white px-10 py-3 hover:cursor-pointer rounded-full !text-gray-500 !font-semibold">Create
                 account</a>
             </div>
         </div>

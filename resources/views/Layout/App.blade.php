@@ -10,7 +10,7 @@
 <body>
 
         <header class="w-full bg-gray-100 shadow-2 py-4 ">
-            <div class="w-full flex justify-between max-w-[90%] mx-auto">
+            <div class="w-full flex justify-between items-center max-w-[90%] mx-auto">
 
                 <div class="">
                     <img src="../assets/assets_frontend/logo.svg" alt="Logo" class="cursor-pointer">
@@ -47,9 +47,9 @@
 
                 <div class="">
                     <a
-                      href="/login"
-                      class="py-3 bg-blue-600 text-white text-sm rounded-sm px-4"
-                    >Create account</a>
+                      href="{{ route("register") }}"
+                      class="py-2 bg-blue-600 text-white text-sm rounded-sm px-4"
+                    >Create Account</a>
 
                 </div>
 

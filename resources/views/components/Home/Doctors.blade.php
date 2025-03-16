@@ -9,5 +9,6 @@
     </div>
 
     {{-- include here the doctors components --}}
+    @include("components.DoctorsBox")
     @include("components.Home.MoreBtn")
   </div>

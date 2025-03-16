@@ -9,7 +9,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-white">
 
     <header class="w-full  shadow-2 py-4 border-b-1 max-w-[80%]  mx-auto border-slate-400">
         <div class="w-full flex justify-between items-center ">
@@ -22,7 +22,7 @@
                 <a href="/" class="text-xs uppercase font-bold py-2 border-b-2 border-transparent">
                     Home
                 </a>
-                <a href="/doctors" class="text-xs uppercase font-bold py-2 border-b-2 border-transparent">
+                <a href="{{ route("doctors.all") }}" class="text-xs uppercase font-bold py-2 border-b-2 border-transparent">
                     All doctors
                 </a>
                 <a href="/about" class="text-xs uppercase font-bold py-2 border-b-2 border-transparent">

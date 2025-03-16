@@ -25,10 +25,10 @@
                 <a href="{{ route("doctors.all") }}" class="text-xs uppercase font-bold py-2 border-b-2 border-transparent">
                     All doctors
                 </a>
-                <a href="/about" class="text-xs uppercase font-bold py-2 border-b-2 border-transparent">
+                <a href="{{ route("about.us") }}" class="text-xs uppercase font-bold py-2 border-b-2 border-transparent">
                     About
                 </a>
-                <a href="/contact" class="text-xs uppercase font-bold py-2 border-b-2 border-transparent">
+                <a href="{{ route("contact.us") }}" class="text-xs uppercase font-bold py-2 border-b-2 border-transparent">
                     Contact
                 </a>
 
